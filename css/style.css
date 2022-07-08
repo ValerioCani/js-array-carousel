@@ -3,3 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel{
+    max-width: 700px;
+    width: 30%;
+    height: 33vh;
+    background-color: aqua;
+    position: relative;
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+}
+
+.image img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    display: none;
+}
+
+.show{
+    display: block;
+}
