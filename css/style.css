@@ -31,6 +31,28 @@
     display: none;
 }
 
-.show{
+#carousel .show img{
     display: block;
+}
+
+#prev, #next{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+
+#prev{
+    top: 10px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+#next{
+    bottom: 10px;
+    left: 50%;
+    transform: translatex(-50%);
 }
