@@ -15,11 +15,11 @@
     max-width: 700px;
     width: 30%;
     height: 33vh;
-    background-color: aqua;
     position: relative;
 }
 
 .image{
+    position: absolute;
     height: 100%;
     width: 100%;
 }
@@ -43,6 +43,8 @@
     border-radius: 50%;
     text-align: center;
     line-height: 40px;
+    cursor: pointer;
+    z-index: 999;
 }
 
 #prev{
