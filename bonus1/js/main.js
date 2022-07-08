@@ -29,6 +29,9 @@ function goUp(event){
     for(let x=0; x<1; x++ ){
         imageContainer[imageSelector].classList.remove('show');
         imageSelector--;
+        if(imageSelector<0){
+            imageSelector = 4;  
+        }
         imageContainer[imageSelector].classList.add('show');
     }
 };
@@ -37,6 +40,9 @@ function goDown(event){
     for(let x=0; x<1; x++ ){
         imageContainer[imageSelector].classList.remove('show');
         imageSelector++;
+        if(imageSelector>4){
+            imageSelector = 0;  
+        }
         imageContainer[imageSelector].classList.add('show');
     }
     
